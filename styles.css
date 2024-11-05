@@ -1,0 +1,274 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #1a1a1a;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 20px auto;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #6366f1;
+}
+
+.btn-contacto {
+    background-color: #6366f1;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #4f50e2;
+}
+
+.nombre-perfil {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6366f1;
+    text-align: center;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Sección perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.perfil-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #6366f1;
+}
+
+.principal-contingut {
+    margin-left: 20px;
+}
+
+.principal-contingut h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.principal-contingut p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+/* Botones*/
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #6366f1;
+}
+
+.btn-primary:hover {
+    background-color: #4f50e2;
+}
+
+.btn-secondary {
+    background-color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+/* Sección habilidade */
+.habilidades {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.habilidades h2 {
+    font-size: 28px;
+    color: #6366f1;
+    margin-bottom: 20px;
+}
+
+.habilidad {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.habilidad h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.habilidad p {
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+/*Sección proyectos*/
+.proyectos {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.proyectos h2 {
+    font-size: 28px;
+    color: #6366f1;
+    margin-bottom: 20px;
+}
+
+.proyecto {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.proyecto h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.proyecto a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.proyecto a:hover {
+    color: #4f50e2;
+}
+
+/*Sección contacto */
+.contacto-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 332px;
+}
+
+/*Iconos */
+.contact-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #3a3a3a;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon img:hover {
+    background-color: #6366f1;
+}
+
+.icon span {
+    color: #bbb;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.icon:hover span {
+    color: #fff;
+}

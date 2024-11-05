@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </nav>
+            <a href="#contacto-info" class="btn-contacto">Contacto</a>
+        </div>
+    </header>
+    
+    
+
+    <!-- Seccion principal -->
+    <section class="perfil">
+        <div class="perfil-foto">
+            <img src="perfil.jpg" alt="Foto de perfil">
+            <h4 class="nombre-perfil">Arnau Armengol</h4>
+        </div>
+       
+        <div class="principal-contingut">
+            <h1>Programador-junior</h1>
+            <p>Bienvenido/a a mi portfolio</p>
+            <div class="buttons">
+                <a href="#contacto-info" class="btn-primary">Contactarme</a>
+                <a href="Cv Arnau Armengol.pdf" class="btn-primary" download="CV_Arnau_Armengol.pdf">Descargar CV</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- seccion de habilidades -->
+      
+     <div id="habilidades" class="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidad">
+            <h3>Java</h3>
+            <p>2 años de experiencia en desarrollo con Java, utilizando Maven para la gestión de proyectos en IntelliJ IDEA. Experiencia en integración de bases de datos relacionales con JDBC y SQL, incluyendo plataformas como ElephantSQL.</p>
+        </div>
+        <div class="habilidad">
+            <h3>.NET con Visual Basic</h3>
+            <p>Experiencia en desarrollo de aplicaciones con .NET utilizando Visual Basic especializado en el dessarrollo de interficies. Utilizando bases de datos relacionales, especialmente con SQL Server.</p>
+        </div>
+        <div class="habilidad">
+            <h3>SQL</h3>
+            <p>Experiencia en el diseño, consulta y gestión de bases de datos relacionales utilizando SQL. Capacidad para crear y optimizar consultas complejas: manejar transacciones, subconsultas, bucles y control de flujo. Asegurando la integridad de datos en plataformas como SQL Server.</p>
+        </div>
+        <div class="habilidad">
+            <h3>Power Bi</h3>
+            <p>Experiencia en la creación de informes dinámicos en Power BI utilizando bases de datos de Excel. Conocimiento en DAX para construir medidas y cálculos personalizados que faciliten el análisis de datos y mejoren la toma de decisiones.</p>
+        </div>
+        <div class="habilidad">
+            <h3>JavaScript</h3>
+            <p>Actualmente aprendiendo JavaScript con el framework React.</p>
+        </div>
+    </div>
+    
+    <!-- Seccion Proyectos -->
+    <div id="proyectos" class="proyectos">
+      <h2>Proyectos</h2>
+    
+      <div class="proyecto">
+        <h3>La Primitiva</h3>
+        <p>Aplicación que simula el funcionamiento del sorteo de La Primitiva, desarrollada utilizando Java, JavaFX para la interfaz gráfica y PostgreSQL como base de datos, implementado a través de ElephantSQL.</p>
+        <a href="https://github.com/arnau-dev/La_Primitiva" target="_blank">Visualizar Proyecto en GitHub</a>
+    </div>
+
+    <div class="proyecto">
+        <h3>Voluntariado gestión residencia</h3>
+        <p>Aplicacion para gestionar una residencia de gente de la tercera edad. Gestionando los proyectos que se raelizan en ella junto a los voluntarios. Realizada con .net/VisualBasic y como base de datos SQL Server </p>
+        <a href="https://github.com/arnau-dev/Voluntariat" target="_blank">Visualizar Proyecto en GitHub</a>
+    </div>
+    
+    
+    </div>
+
+    
+    <!-- Seccion contacto-->
+    <section id="contacto-info" class="contacto-info">
+        <div class="contact-icons">
+            <div class="icon" onclick="copiarCorreo()">
+                <img src="gmail_logo.webp" alt="arnau.aral03@gmail.com">
+                <span>Copiar Correo</span>
+            </div>
+    
+            <a href="https://www.linkedin.com/in/arnauaa" target="_blank" class="icon">
+                <img src="linkedin-logo.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+    
+            <a href="https://github.com/arnau-dev" target="_blank" class="icon">
+                <img src="git.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+    
+        </div>
+    </section>
+    <!-- Funcion para copiar correo-->
+    <script>
+        function copiarCorreo() {
+            const correo = "arnau.aral03@gmail.com";
+            navigator.clipboard.writeText(correo).then(() => {
+                alert("Correo copiado al portapapeles: " + correo);
+            }).catch(err => {
+                console.error('Error al copiar el correo: ', err);
+            });
+        }
+    </script>
+    <!-- Centrar Habilidades y proyectos-->
+   <script>
+
+    document.querySelector('.nav-menu li a[href="#habilidades"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const habilidadesSection = document.getElementById('habilidades');
+        const offset = habilidadesSection.offsetTop - 0;
+
+        window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+        });
+    });
+    document.querySelector('.nav-menu li a[href="#proyectos"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const proyectosSection = document.getElementById('proyectos');
+        const offset = proyectosSection.offsetTop - 30;
+
+        window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+    
+    
+</body>
+</html>
